@@ -19,7 +19,7 @@ fun main() {
     )
 
     //ad1
-    val onlyClothes = produkty.filter{ it.category == "Odzież" }
+    val onlyClothes = produkty.filter{ it.category == "Odzież" }.map { it.name }
     println(onlyClothes)
 
     //ad2
