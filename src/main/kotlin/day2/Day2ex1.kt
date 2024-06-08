@@ -27,7 +27,6 @@ fun main() {
     println(moreThan100)
 
     //ad3
-    val onlyElectronics = produkty.filter { it.category == "Elektronika" }
-    val totalPrice: Double = onlyElectronics.sumOf{ it.price }
+    val totalPrice = produkty.filter { it.category == "Elektronika" }.sumOf { it.price }
     println("Total eletronics price: $totalPrice")
 }
